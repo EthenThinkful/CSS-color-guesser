@@ -1,38 +1,108 @@
 .App {
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  /* background-color:rgb(220, 255, 139); */
+  object-fit: cover;
+}
+
+.guessMe {
+  /* width: 400px; */
+  height: 300px;
+  max-width: 100%;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.hey {
+  display: inline-block;
+  padding: 15px 15px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: rgb(3, 0, 0);
+  background-color: #dddddd;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+  margin: 20px;
+}
+
+.hey:hover {
+  background-color: rgb(241, 241, 241);
+}
+
+.hey:active {
+  background-color: rgb(241, 241, 241);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.wrong {
+  color: brown;
+  font-weight: 450;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.correct {
+  color: green;
+  font-weight: 450;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 25px;
+}
+
+.selectAnOption {
+  color: aqua;
+  font-weight: 450;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 20px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+header {
+  /* background-image: url("https://user-images.githubusercontent.com/104235709/196279977-e6d3e184-8ea9-4f8b-9fb1-73a509431da8.jpg"); */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100%;
+  height: 100px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(0, 0, 0);
+  animation: animate 2.5s linear infinite;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes animate {
+  0% {
+    opacity: 0;
+    color: #10c018;
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    color: #ef0a1a;
+  }
+  50% {
+    opacity: 0.8;
+    color: #1056c0;
+  }
+  75% {
+    color: #04a1d5;
+  }
+  100% {
+    opacity: 0;
   }
 }
